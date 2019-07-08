@@ -13,7 +13,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        Voyager::addFormField(KeyValueJsonFormField::class);
+        $this->app->bind(
+            'TCG\Voyager\Http\Controllers\VoyagerBaseController',
+            'App\KeyValueJson\KeyValueJsonController'
+        );
     }
 
     /**
@@ -23,6 +27,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'keyvaluejson');
     }
 }
