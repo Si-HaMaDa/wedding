@@ -46,81 +46,14 @@
                               </ul>
                            </div>
                         </div>
-                        <!-- حصة الإعلان  -->
-                        <!--div class="ad-share text-center">
-                           <div data-toggle="modal" data-target=".share-ad" class="ad-box col-md-4 col-sm-4 col-xs-12">
-                              <i class="fa fa-share-alt"></i> <span class="hidetext">شارك</span>
-                           </div>
-                           <a class="ad-box col-md-4 col-sm-4 col-xs-12" href="#"><i class="fa fa-star active"></i> <span class="hidetext">أضافة إلى قائمة المشاهدة</span></a>
-                           <div data-target=".report-quote" data-toggle="modal" class="ad-box col-md-4 col-sm-4 col-xs-12">
-                              <i class="fa fa-warning"></i> <span class="hidetext">تقرير</span>
-                           </div>
-                        </div-->
+
                         <div class="clearfix"></div>
                         <!-- Short Description  -->
                         <div class="ad-box">
-                           <div class="short-features">
-                              <!-- Heading Area -->
-                              <!--div class="heading-panel">
-                                 <h3 class="main-title text-left">
-                                    وصف
-                                 </h3>
-                              </div-->
-                              <!--div class="col-sm-4 col-md-4 col-xs-12 no-padding">
-                                 <span><strong>شرط</strong> :</span> مستعمل
-                              </div-->
-                              <!--div class="col-sm-4 col-md-4 col-xs-12 no-padding">
-                                 <span><strong>علامة تجارية</strong> :</span> نوكيا
-                              </div>
-                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
-                                 <span><strong>نموذج</strong> :</span> على lumia 625
-                              </div>
-                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
-                                 <span><strong>نوع المنتج</strong>:</span>التليفون المحمول
-                              </div>
-                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
-                                 <span><strong>تاريخ</strong> :</span> 2014-10-06
-                              </div>
-                              <div class="col-sm-4 col-md-4 col-xs-12 no-padding">
-                                 <span><strong>السعر</strong> :</span> روبية. 22000
-                              </div-->
-                           </div>
+
                            <!-- Short Features  -->
-                           <!--div class="desc-points">
-                              <ul>
-                                 <li>
-                                    تبحث لبيع السيارات على وجه السرعة.
-                                 </li>
-                                 <li>
-                                    المحرك بحالة جيدة.
-                                 </li>
-                                 <li>
-                                    خدمة التاريخ الكامل متاح.
-                                 </li>
-                                 <li>
-                                    هو ملف عودة الأصلي متاح.
-                                 </li>
-                                 <li>
-                                    بعد عجلات ألمنيوم السوق.
-                                 </li>
-                                 <li>
-                                    جيدة مثل سيارة جديدة.
-                                 </li>
-                                 <li>
-                                    سيدة مدفوعة السيارة في حالة الطاهرة.
-                                 </li>
-                                 <li>
-                                    لا يشترط في سيارة العمل.
-                                 </li>
-                                 <li>
-                                    ممتازة عدد الأميال، المحلي متوسط ​​= 14 كم، طويل متوسط ​​= 16 كم .
-                                 </li>
-                              </ul>
-                           </div-->
-                           <!-- Related Image  -->
-                           <!--div class="ad-related-img">
-                              <img src="{{url('frontend')}}/images/car-img1.png" alt="" class="img-responsive center-block">
-                           </div-->
+
+
                            <!-- Ad Specifications -->
                            <div class="specification">
                               <!-- Heading Area -->
@@ -140,28 +73,7 @@
                      </div>
                      <!-- إعلان واحد End -->
                      <!-- Price Alert >
-                     <div class="alert-box-container  margin-top-30">
-                                    <div class="well">
-                                       <h3>إنشاء تنبيه</h3>
-                                       <p>استقبال رسائل البريد الإلكتروني للحصول على أحدث إعلانات مطابقة لمعايير البحث</p>
-                                       <form>
-                                          <div class="row">
-                                             <div class="col-md-5 col-xs-12 col-sm-12">
-                                                <input placeholder="Enter Your Email " type="text" class="form-control">
-                                             </div>
-                                             <div class="col-md-4 col-xs-12 col-sm-12">
-                                                <select class="alerts">
-                                                   <option value="1">Daily</option>
-                                                   <option value="7">Weekly</option>
-                                                </select>
-                                             </div>
-                                             <div class="col-md-3 col-xs-12 col-sm-12">
-                                                <input class="btn btn-theme btn-block" value="عرض" type="submit">
-                                             </div>
-                                          </div>
-                                       </form>
-                                    </div>
-                                 </div>
+                    
                      <!-- Price Alert End -->
                      <!-- =-=-=-=-=-=-= Latest Ads =-=-=-=-=-=-= -->
                      <div class="grid-panel margin-top-30" style="">
@@ -289,11 +201,18 @@
                            </div>
                            <div class="ad-listing-meta">
                               <ul>
-                                 <li> السعه: <span class="color">{{$ads->areanumber}}</span></li>
-                                 <li>الفئات: <span class="color">Used {{$ads->category->name}}</span></li>
-                                 @if($ads->service)
-                                 <li>الخدمه: <span class="color">{{$ads->service}}</span></li>
+
+                                 <li>الفئات: <span class="color"> {{$ads->category->name}}</span></li>
+                                 <li>المدينه: <span class="color"> {{$ads->city->name}}</span></li>
+                                 @if($ads->sub_category_id)
+                                 <li> التصنيف: <span class="color">{{$ads->sub_category->name}}</span></li>
                                  @endif
+                                 @if($ads->attrs)
+                                 @foreach( json_decode($ads->attrs) as $attr)
+                                 <li>{{ $attr->key }}: <span class="color">{{ $attr->value }}</span></li>
+                                 @endforeach
+                                 @endif
+
                                  @if($ads->servicetype)
                                  <li>نوع الخدمه: <span class="color">{{$ads->servicetype}}</span></li>
                                  @endif

@@ -115,7 +115,7 @@ $categories=Category::all();
                                  <!-- drop down multilevel  -->
                                  <ul class="drop-down-multilevel">
                                     @foreach($categories as $item)
-                                     <li><a href="category-2.html"> {{$item->name}}</a></li>
+                                     <li><a href="{{url('categoryads/'.$item->id)}}"> {{$item->name}}</a></li>
                                        @endforeach
 
                                  </ul>

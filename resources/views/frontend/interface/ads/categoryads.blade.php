@@ -23,7 +23,7 @@
                         <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
                            <!-- Sorting Filters Breadcrumb -->
                            <div class="filter-brudcrums">
-                              <span>عرض <span class="showed"></span> من <span class="showed"></span>  النتائج</span>
+                              <span>عرض <span class="showed"></span> من <span class="showed">{{$count}}</span>  النتائج</span>
                               <!--div class="filter-brudcrums-sort">
                                  <ul>
                                     <li><span>ترتيب حسب:</span></li>
@@ -73,7 +73,7 @@
                                                    <h3> <a href="{{url('adsdetails/'.$item->id)}}">  {{$item->name}}</a></h3>
                                                    <!-- Ad Description-->
                                                    <p class="ad-details">
-                                                      <p>{{$item->decription}}</p>
+                                                      <p>{{$item->description}}</p>
                                                    </p>
                                                    <!-- Info Icons -->
                                                    <ul class="additional-info pull-right">
@@ -109,6 +109,9 @@
                                                    <!-- Ad Stats -->
                                                    <div class="short-info">
                                                    <div class="ad-stats hidden-xs"><span>فئة: {{$item->category->name}}</span> </div>
+                                                   @if($item->sub_category_id)
+                                                      <div class="ad-stats hidden-xs" style="font-size:20px;"><span>التصنيف  : </span>{{$item->sub_category->name}}</div>
+                                                      @endif
                                                    @if($item->areanumber)
                                                       <div class="ad-stats hidden-xs" style="font-size:20px;"><span>السعه  : </span>{{$item->areanumber}}</div>
                                                       @endif
@@ -135,21 +138,7 @@
 
                               </ul>
                            </div>
-                           <!-- Advertizing -->
-                           <div class="col-md-12 col-xs-12 col-sm-12">
-                              <section class="advertising">
-                                 <a href="post-ad-1.html">
-                                    <div class="banner">
-                                       <div class="wrapper">
-                                          <span class="title">هل تريد الممتلكات الخاصة بك ليتم سرد هنا?</span>
-                                          <span class="submit">إرسال الآن! <i class="fa fa-plus-square"></i></span>
-                                       </div>
-                                    </div>
-                                    <!-- /.banner-->
-                                 </a>
-                              </section>
-                           </div>
-                           <!-- Advertizing End -->
+                           
                         </div>
                         <!-- Ads Archive End -->
                         <div class="clearfix"></div>

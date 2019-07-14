@@ -19,7 +19,7 @@ $categories =Category::all();
                         <p class="text-center">  الدليل الاكبر لجميع خدمات حفل الزفاف  </p-->
                      </div>
                      <div class="search-form">
-                        <form method="post" action="{{url('search')}}">
+                        <form method="post" action="{{url('searchads')}}">
                         {{ csrf_field() }}
                         <div class="row">
 
