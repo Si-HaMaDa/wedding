@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12242a45f048288a6348683ad72e8dc9",
+    "content-hash": "43458863eed822c11ea3608c97bc164a",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -971,6 +971,58 @@
                 "trusted proxy"
             ],
             "time": "2019-01-10T14:06:47+00:00"
+        },
+        {
+            "name": "generate-migrations-hook",
+            "version": "v0.1.3beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mohammed-io/generate-migrations-hook.git",
+                "reference": "v0.1.3beta"
+            },
+            "require": {
+                "larapack/hooks": "~1.0",
+                "laravel/framework": "^5.5",
+                "php": "^7.0.0",
+                "tcg/voyager": "^1.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "phpunit/phpunit": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "hook": {
+                    "providers": [
+                        "MohammedIO\\GenerateMigrationsHookServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MohammedIO\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "MohammedIO\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://larapack.io/downloads",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mohammed A.",
+                    "email": "mohammed-io@outlook.com",
+                    "homepage": "https://mohammed-io.github.io/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This hook is to generate voyager-only migration for laravel app",
+            "homepage": "https://github.com/mohammed-io/generate-migrations-hook",
+            "time": "2019-07-10T13:07:37+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -5885,7 +5937,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "generate-migrations-hook": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
