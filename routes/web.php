@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +15,25 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Route::get('/homepage','frontendcontroller@homepage');
+
+
+
+
+
+
+
+
 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+
 });
+/*Route::get('/getcityareas/{id}','workcontroller@getcityareas');
+Route::get('/getads','workcontroller@getads');
+
+Route::get('/homepage','frontendcontroller@homepage');
+Route::get('/about','frontendcontroller@about');*/
+
+
