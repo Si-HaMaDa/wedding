@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,3 +30,10 @@ Route::group(['prefix' => 'admin'], function () {
     });
 
 });
+/*Route::get('/getcityareas/{id}','workcontroller@getcityareas');
+Route::get('/getads','workcontroller@getads');
+
+Route::get('/homepage','frontendcontroller@homepage');
+Route::get('/about','frontendcontroller@about');*/
+
+
