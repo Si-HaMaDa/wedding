@@ -40,9 +40,6 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapFrontRoutes();
 
         $this->mapWebRoutes();
-
-        $this->mapFrontRoutes();
-        //
     }
 
     /**
@@ -71,13 +68,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
-    }
-
-    protected function mapFrontRoutes()
-    {
-        Route::middleware('web')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/front.php'));
     }
 
     /**
