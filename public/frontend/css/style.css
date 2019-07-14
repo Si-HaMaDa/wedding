@@ -30,7 +30,7 @@ Designed and Development by: ScriptsBundle
 	20.0 -  Grid Listing 2
 	21.0 -  Listing View 1
 	22.0 -  Listing View Switch
-	23.0 -  Listing View 3 
+	23.0 -  Listing View 3
 	24.0 -  Listing View 4
 	25.0 -  واحد التفاصيل الإعلانs
 	26.0 -  Listing Sidebar & Blog Sidebar
@@ -42,7 +42,7 @@ Designed and Development by: ScriptsBundle
     32.0 -  Minimal الفئات
     33.0 -  Fancy الفئات
     34.0 -  Category Grid 4
-    35.0 -  Category Grid 5 
+    35.0 -  Category Grid 5
     36.0 -  Breadcrumbs
     37.0 -  Carousel Slider
 	38.0 -  Parallex Overlays
@@ -76,7 +76,7 @@ Designed and Development by: ScriptsBundle
 	66.0 -  التسعير
 	67.0 -  التسعير Style 1
 	68.0 -  Footer
-	69.0 -  Minimal Footer 
+	69.0 -  Minimal Footer
 	70.0 -  Minimal Footer Version 2
 
 -------------------------------------
@@ -85,7 +85,13 @@ Designed and Development by: ScriptsBundle
 */
 
 /* =-=-=-=-=-=-= Arabic Google Fonts  =-=-=-=-=-=-= */
-@import url(http://fontlibrary.org/face/droid-arabic-naskh);
+/* @import url(http://fontlibrary.org/face/droid-arabic-naskh); */
+/* DroidArabicNaskhRegular */
+@font-face {
+	font-family: 'DroidNaskhRegular';
+	src: url('../fonts/DroidNaskhRegular.eot');
+	src: local('DroidNaskhRegular'), url('../fonts/DroidNaskhRegular.woff') format('woff'), url('../fonts/DroidNaskhRegular.ttf') format('truetype');
+}
 
 
 /* =-=-=-=-=-=-= General Styling =-=-=-=-=-=-= */
@@ -742,7 +748,7 @@ ul {
 }
 
 .header-top  .dropdown-menu > li > a:hover, .header-top .dropdown-menu > li > a:focus {
-	color:#fff !important ;	
+	color:#fff !important ;
 }
 
 .header-top .dropdown-menu > li > a {
@@ -1655,7 +1661,7 @@ ul.category-list-style li a span {
 }
 
 .location i{
-	padding-right:5px;	
+	padding-right:5px;
 }
 
 .category-grid-box-1 .price-tag {
@@ -1673,7 +1679,7 @@ ul.category-list-style li a span {
 }
 
 .category-grid-box-1 .image img {
-	width:100%;	
+	width:100%;
 }
 
 .special-label-small {
@@ -1845,10 +1851,10 @@ ul.category-list-style li a span {
 	top: 0;
 	-ms-transform: scale(0.9);
 	/* IE 9 */
-    
+
 	-webkit-transform: scale(0.9);
 	/* Chrome, Safari, Opera */
-    
+
 	transform: scale(0.9);
 	width: 100%;
 }
@@ -1856,10 +1862,10 @@ ul.category-list-style li a span {
 	opacity: 0.7;
 	-ms-transform: scale(1);
 	/* IE 9 */
-    
+
 	-webkit-transform: scale(1);
 	/* Chrome, Safari, Opera */
-    
+
 	transform: scale(1);
 }
 .category-grid-box .user-preview {
@@ -1892,10 +1898,10 @@ ul.category-list-style li a span {
 	display: block;
 	-ms-transform: scale(1);
 	/* IE 9 */
-    
+
 	-webkit-transform: scale(1);
 	/* Chrome, Safari, Opera */
-    
+
 	transform: scale(1);
 }
 .category-grid-box .additional-information {
@@ -1926,7 +1932,7 @@ ul.category-list-style li a span {
 	 padding: 3px 10px;
 }
 .category-grid-box .short-description .btn i {
-	margin-left:5px;	
+	margin-left:5px;
 }
 .category-grid-box .short-description h3 a {
 	color: #232323;
@@ -2003,10 +2009,10 @@ ul.category-list-style li a span {
 	top: 0;
 	-ms-transform: scale(0.9);
 	/* IE 9 */
-    
+
 	-webkit-transform: scale(0.9);
 	/* Chrome, Safari, Opera */
-    
+
 	transform: scale(0.9);
 	width: 100%;
 }
@@ -2014,10 +2020,10 @@ ul.category-list-style li a span {
 	opacity: 0.7;
 	-ms-transform: scale(1);
 	/* IE 9 */
-    
+
 	-webkit-transform: scale(1);
 	/* Chrome, Safari, Opera */
-    
+
 	transform: scale(1);
 }
 .ad-listing .ad-status {
@@ -2068,10 +2074,10 @@ ul.category-list-style li a span {
 	top: 0;
 	-ms-transform: scale(0.9);
 	/* IE 9 */
-    
+
 	-webkit-transform: scale(0.9);
 	/* Chrome, Safari, Opera */
-    
+
 	transform: scale(0.9);
 	width: 100%;
 }
@@ -2380,13 +2386,13 @@ ul.category-list-style li a span {
 .ribbon.expired {
 	background: #000000;
 	/* fallback for old browsers */
-    
+
 	background: -webkit-linear-gradient(to left, #000000, #434343);
 	/* Chrome 10-25, Safari 5.1-6 */
-    
+
 	background: linear-gradient(to left, #000000, #434343);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 	color: #fff;
 }
 .ribbon {
@@ -2422,7 +2428,7 @@ ul.category-list-style li a span {
 .ad-archive-desc {
 	border-right: medium none;
 	/*line-height: 17px;*/
-    
+
 	padding: 10px 20px;
 }
 .ad-archive-desc .rating {
@@ -3038,7 +3044,7 @@ ul.add_info li i {
 	font-size: 16px;
 }
 .side-menu {
-	background:#fff;	
+	background:#fff;
 }
 .skin-minimal .list li label:hover {
 	text-decoration: none;
@@ -6140,7 +6146,7 @@ ul.category-list-data li:hover a span {
 	left: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	/* image replacement properties */
-    
+
 	overflow: hidden;
 	text-indent: 100%;
 	white-space: nowrap;
@@ -6162,7 +6168,7 @@ ul.category-list-data li:hover a span {
 }
 .cd-top.cd-fade-out {
 	/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-    
+
 	opacity: .5;
 }
 .no-touch .cd-top:hover {
@@ -6184,7 +6190,7 @@ ul.category-list-data li:hover a span {
 	z-index: 999;
 }
 .sticky-post-button:focus {
-	color:#fff !important;	
+	color:#fff !important;
 }
 .sticky-post-button .sell-icons {
 	display: inline-block;
@@ -6320,7 +6326,7 @@ ul.category-list-data li:hover a span {
 .featured-ads .pricing-fancy {
 	margin-bottom:0;
 	min-height: 506px;
-	padding: 100px 32px;	
+	padding: 100px 32px;
 }
 
 .featured-ads .app-text-section h3 {
@@ -7878,7 +7884,7 @@ footer#footer .widget-newsletter .fieldset P {
 	padding: 25px 0;
 }
 .copyright-content p a {
-	color:#fff;	
+	color:#fff;
 }
 .copyright-content, .footer-top {
 	border-top: 1px solid #343434;
@@ -8433,7 +8439,7 @@ ul.listingViewIcon li.shortByListingLi ul li a {
 
 .search-modal  .search-block .popular-search
 {
- padding-top:15px; 
+ padding-top:15px;
 }
 
 .search-modal  .search-block .popular-search label
@@ -8442,11 +8448,11 @@ ul.listingViewIcon li.shortByListingLi ul li a {
 }
 
 .search-modal  .search-block .popular-search ul li a {
- color:#232323; 
+ color:#232323;
 }
 
 .search-modal .form-control:focus {
- box-shadow:none; 
+ box-shadow:none;
 }
 .search-modal .close {
  color: #fff !important;
@@ -8459,7 +8465,7 @@ ul.listingViewIcon li.shortByListingLi ul li a {
 }
 .drop-down-multilevel .hoverTrigger .label {
 	margin-left:10px;
-	color:#fff;	
+	color:#fff;
 }
 .single-ad  .featured-border {
     border-top: 4px solid #b63339;
